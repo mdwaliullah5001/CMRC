@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Suppress disabled HMR/WebSocket errors in iframe sandbox
+      (function() {
+        function filter(msg) {
+          return msg && (
+            msg.indexOf("Cannot read properties of undefined (reading 'send')") !== -1 ||
+            msg.indexOf("reading 'send'") !== -1 ||
+            msg.indexOf("WebSocket") !== -1 ||
+            msg.indexOf("HMR") !== -1
+          );
+        }
+        window.addEventListener('error', function(e) {
+          if (filter(e.message) || (e.error && filter(e.error.message))) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            return true;
+          }
+        }, true);
+        window.addEventListener('unhandledrejection', function(e) {
+          var str = e.reason ? (e.reason.message || String(e.reason)) : '';
+          if (filter(str)) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <title>CMRC - Contract Resource Management Centre | FIDIC Yellow & Red Book</title>
+    <meta name="description" content="CMRC - Contract Resource Management Centre. FIDIC Yellow Book, FIDIC Red Book, Yellow Bangla, Red Bangla, Red Quiz, and Yellow Quiz for engineering professionals and contractors." />
+    <meta name="theme-color" content="#86efac" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="pwa-192x192.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:title" content="CMRC - Contract Resource Management Centre" />
+    <meta property="og:description" content="CMRC - Contract Resource Management Centre. FIDIC Yellow Book, Red Book, Bangla pocketbooks, and interactive quizzes." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/yellow-bangla.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/yellow-bangla.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
