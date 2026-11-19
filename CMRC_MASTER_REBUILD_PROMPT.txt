@@ -1,0 +1,156 @@
+================================================================================
+CMRC - CONTRACT RESOURCE MANAGEMENT CENTRE | MASTER REBUILD PROMPT
+================================================================================
+Use this comprehensive master prompt to recreate or redevelop the complete CMRC 
+(Contract Resource Management Centre) application from scratch in Google AI Studio
+or any coding assistant.
+================================================================================
+
+PROMPT TO COPY AND PASTE:
+--------------------------------------------------------------------------------
+
+Build a production-grade, mobile-first Progressive Web App (PWA) and Android TWA 
+named "CMRC - Contract Resource Management Centre" (চুক্তি সম্পদ ব্যবস্থাপনা কেন্দ্র), 
+specifically designed as a digital learning and practical contract administration 
+desk for engineering professionals, project directors, consultants, and contractors 
+working with international construction contracts (FIDIC 2017 Second Edition).
+
+### 1. APPLICATION IDENTITY & BRANDING
+- App Name: CMRC - Contract Resource Management Centre
+- Short Name: CMRC
+- Moderator / Creator: Engr. Md Wali Ullah (Email: wali.1005@gmail.com)
+- Brand Colors: Emerald Green (#064E3B, #059669, #86EFAC) paired with Crimson Red (#991B1B, #E11D48) for Red Book and Golden Amber (#B45309, #F59E0B) for Yellow Book.
+- Typography: Dual-font pairing with Google Fonts:
+  - Bengali: "Hind Siliguri" (font-bengali)
+  - English: "Plus Jakarta Sans" (font-english)
+  - Code/Time-bars: "JetBrains Mono" (font-mono)
+- UI Design: Sleek Android native look (Material 3 inspired) with top app bar, sliding navigation drawer, bottom navigation bar (Home, Yellow 2017, Red 2017, Quizzes, Note Book), responsive cards, search filtering, and font size adjuster (Normal, Large, Extra Large).
+
+### 2. CORE MODULES & FEATURES
+The application must contain 7 core integrated modules accessible from the home launching screen, navigation drawer, and bottom bar:
+
+1. FIDIC Yellow Book 2017 (Plant and Design-Build):
+   - Complete 21 Clauses and 168 Sub-Clauses breakdown.
+   - Focus on Contractor's design responsibility, Employer's Requirements (1.9), Tests on Completion (Clause 9), Tests after Completion (Clause 12), and Lump Sum payment structures.
+   - Filterable by Clause category: General, Employer/Engineer, Contractor, Time & Completion, Variations & Payment, Risk & Claims.
+
+2. FIDIC Yellow Book 2017 Bangla Pocketbook (হলুদ বই বাংলা গাইড):
+   - Practical Bengali translation and commentary for all 21 clauses.
+   - Clause-by-clause takeaways tailored for:
+     * Employer / Project Director (মালিক / পিডি নির্দেশিকা)
+     * The Engineer / Consultant (পরামর্শক / প্রকৌশলী নির্দেশিকা)
+     * The Contractor (ঠিকাদার নির্দেশিকা)
+
+3. FIDIC Red Book 2017 (Conditions of Contract for Construction):
+   - Complete 21 Clauses and 168 Sub-Clauses breakdown (FIDIC Red Book 2017 Second Edition):
+     * Clause 1: General Provisions (16 SCs, 1.1–1.16)
+     * Clause 2: The Employer (6 SCs, 2.1–2.6)
+     * Clause 3: The Engineer (8 SCs, 3.1–3.8)
+     * Clause 4: The Contractor (23 SCs, 4.1–4.23)
+     * Clause 5: Subcontracting (2 SCs, 5.1–5.2)
+     * Clause 6: Staff and Labour (12 SCs, 6.1–6.12)
+     * Clause 7: Plant, Materials and Workmanship (8 SCs, 7.1–7.8)
+     * Clause 8: Commencement, Delays and Suspension (13 SCs, 8.1–8.13, including 8.4 Advance Warning)
+     * Clause 9: Tests on Completion (4 SCs, 9.1–9.4)
+     * Clause 10: Employer’s Taking Over (4 SCs, 10.1–10.4)
+     * Clause 11: Defects after Taking Over (11 SCs, 11.1–11.11)
+     * Clause 12: Measurement and Valuation (4 SCs, 12.1–12.4, Red Book specific BoQ re-measurement)
+     * Clause 13: Variations and Adjustments (7 SCs, 13.1–13.7)
+     * Clause 14: Contract Price and Payment (15 SCs, 14.1–14.15)
+     * Clause 15: Termination by Employer (7 SCs, 15.1–15.7)
+     * Clause 16: Suspension and Termination by Contractor (4 SCs, 16.1–16.4)
+     * Clause 17: Care of the Works and Indemnities (6 SCs, 17.1–17.6)
+     * Clause 18: Exceptional Events (6 SCs, 18.1–18.6)
+     * Clause 19: Insurance (2 SCs, 19.1–19.2)
+     * Clause 20: Employer’s and Contractor’s Claims (2 SCs, 20.1–20.2)
+     * Clause 21: Disputes and Arbitration (8 SCs, 21.1–21.8)
+     * Total = exactly 168 Sub-Clauses across 21 Clauses.
+   - Dedicated focus on Clause 12: Measurement and Valuation (12.1 Works to be Measured, 12.2 Method of Measurement, 12.3 Valuation of Works, 12.4 Omissions).
+   - Highlights Employer design risk, Bill of Quantities (BoQ) re-measurement, and rate variation principles.
+
+4. FIDIC Red Book 2017 Bangla Pocketbook (লাল বই বাংলা নির্দেশিকা):
+   - Practical Bengali commentary for all 21 clauses emphasizing item-rate measurement, joint site measurement protocols, BOQ escalation, and Engineer determination under Clause 3.7.
+
+5. Time-Bars & Critical Deadlines Matrix (টাইম-বার এবং সময়সীমা):
+   - Interactive matrix highlighting all fatal contractual deadlines:
+     * Sub-clause 20.2.1: 28-day Notice of Claim (Fatal time-bar: failure discharges claim completely!)
+     * Sub-clause 20.2.4: 84-day Fully Detailed Claim
+     * Sub-clause 3.7.1: 42-day Consultation to reach agreement
+     * Sub-clause 3.7.2: 42-day Engineer's Fair Determination
+     * Sub-clause 3.7.5: 28-day Notice of Dissatisfaction (NOD)
+     * Sub-clause 21.4.1: 84-day DAAB Decision
+     * Sub-clause 21.4.4: 28-day NOD with DAAB decision
+     * Sub-clause 1.6: 28-day Contract Agreement signing
+     * Sub-clause 4.2: 28-day Performance Security submission
+     * Sub-clause 8.1: 14-day Notice of Commencement Date
+     * Sub-clause 8.3: 28-day Initial Baseline CPM Programme submission
+     * Sub-clause 14.7: 56-day Interim Payment deadline
+
+6. Contractual Notice Draft Templates (নোটিশ খসড়া টেমপ্লেট):
+   - Pre-formatted formal legal notice templates ready to customize and copy with 1 click:
+     * Sub-clause 20.2.1: Notice of Claim (কন্ট্রাক্টরের ক্লেইম নোটিশ)
+     * Sub-clause 8.5: Extension of Time (EOT) Notice
+     * Sub-clause 8.4: Advance Warning Notice (অগ্রিম সতর্কবার্তা)
+     * Sub-clause 1.9: Notice of Delayed Drawings / Instructions (ড্রয়িং বিলম্ব নোটিশ)
+     * Sub-clause 4.12: Unforeseen Physical Conditions Notice (অনাকাঙ্ক্ষিত ভূতাত্ত্বিক প্রতিবন্ধকতা)
+     * Sub-clause 13.3: Request for Variation Proposal
+     * Sub-clause 16.1: Notice of Suspension for Non-Payment (বিল না পাওয়ায় কাজ স্থগিত)
+     * Sub-clause 3.7.5: Notice of Dissatisfaction (NOD) against Engineer's Determination
+
+7. Interactive Examination Quizzes (ইন্টারেক্টিভ কুইজ পরীক্ষা):
+   - Yellow Book Quiz: 10 scenario-based questions with instant score, time tracking, question review, and detailed legal explanations.
+   - Red Book Quiz: 10 practical civil engineering and BOQ measurement questions.
+
+8. Personal Notebook & Bookmark Management:
+   - Save bookmarks across any clause or sub-clause with quick filtering.
+   - Built-in personal notes editor allowing users to write and save clause-specific notes stored persistently in browser LocalStorage.
+
+### 3. MODERATOR PROFILE MODAL
+- Modal showcasing Engr. Md Wali Ullah's credentials as Lead Contract Specialist & Trainer.
+- Quick training schedule review table (Induction training for DMTCL/metro rail and public works officials).
+- Direct WhatsApp, email, and LinkedIn contact action buttons.
+
+### 4. 100% OFFLINE CAPABILITY (AIRPLANE MODE READY)
+The application must work 100% offline without internet after being installed on mobile:
+- Configure `vite-plugin-pwa` with Workbox in `vite.config.ts`:
+  * `globPatterns`: `['**/*.{js,css,html,ico,png,svg,webmanifest,json,jpg,jpeg,webp}']`
+  * Pre-cache all core modules, clauses, fonts, and assets (30+ entries, ~2.8MB).
+  * Auto-activation on install: `clientsClaim: true`, `skipWaiting: true`.
+  * `navigateFallback: 'index.html'` to serve SPA on any route offline.
+  * Caching strategies:
+    - CacheFirst for documents, scripts, styles, images, and local fonts.
+    - CacheFirst with dedicated cache for `https://fonts.googleapis.com` and `https://fonts.gstatic.com` (so Hind Siliguri and Plus Jakarta Sans render offline).
+- In `src/main.tsx`, register service worker immediately in production using `virtual:pwa-register`.
+
+### 5. ANDROID APK & GITHUB PAGES READINESS
+To enable instant, error-free conversion into an Android APK via PWABuilder:
+- Manifest File (`public/manifest.json`):
+  * `"id": "./"`
+  * `"start_url": "./"`
+  * `"scope": "./"`
+  * `"display": "standalone"`
+  * `"theme_color": "#86efac"`
+  * `"background_color": "#f8fafc"`
+  * Icons: `pwa-192x192.png` (192x192, any), `pwa-512x512.png` (512x512, any), `pwa-maskable-512x512.png` (512x512, maskable) using relative paths (no leading slash so it works in any domain or GitHub Pages subdirectory like `/CMRC/`).
+- Digital Asset Links:
+  * Include `public/.well-known/assetlinks.json` configured for `package_name: "com.cmrc.contractdesk"` so Android hides the browser address bar in TWA mode.
+- Static Hosting Compatibility:
+  * Add `public/.nojekyll` to tell GitHub Pages to bypass Jekyll processing.
+  * Add `public/404.html` (SPA fallback).
+  * Set `base: './'` in `vite.config.ts`.
+- In-App APK Modal (`AndroidApkModal.tsx`):
+  * Provide 1-tap Chrome WebAPK install instructions.
+  * Provide step-by-step GitHub Pages & PWABuilder export guide.
+  * Provide downloadable ZIP packages:
+    - `Pre-Built Web App (.ZIP)`: containing compiled `index.html`, `sw.js`, `.well-known`, and assets ready to drag into GitHub.
+    - `Full Source Code (.ZIP)`: containing project code, automated `.github/workflows/deploy-pages.yml`, and `twa-manifest.json`.
+
+### 6. TECHNICAL STACK & STABILITY
+- Framework: React 19 + TypeScript + Vite.
+- Styling: Tailwind CSS v4 (`@tailwindcss/vite`, imported with `@import "tailwindcss";`).
+- Icons: `lucide-react`.
+- Animations: Smooth transitions and accordion panels.
+- Dev Server Stability:
+  * In `vite.config.ts`, set `server.forwardConsole = false` to prevent `@vite/client` from attempting to send logs over disconnected WebSockets in sandbox iframe environments.
+  * Set `devOptions: { enabled: false }` in `VitePWA` so development mode stays clean while production builds generate the full service worker.
+================================================================================
